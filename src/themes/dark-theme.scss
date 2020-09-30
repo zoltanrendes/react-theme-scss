@@ -1,0 +1,33 @@
+@import "./vars";
+
+$header-background: darken($base-background, 45);
+
+@mixin darkTheme() {
+  .dark-theme & {
+    @content;
+  }
+}
+
+.themed-content {
+  @include darkTheme {
+    padding: 0.5rem;
+    background-color: darken($base-background, 10);
+    main {
+      color: white;
+      border: $base-border-width solid darken($base-background, 30);
+      border-radius: $base-border-radius;
+      padding: $base-padding;
+      header {
+        background-color: rgba(128, 128, 128, 0.877);
+      }
+      .content {
+        background-color: rgba(128, 128, 128, 0.8);
+        height: $content-height;
+      }
+      footer {
+        background-color: rgba(128, 128, 128, 0.755);
+        height: $base-height;
+      }
+    }
+  }
+}

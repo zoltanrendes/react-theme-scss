@@ -1,0 +1,7 @@
+$base-height: 1rem;
+$content-height: calc(100vh - #{$base-height * 4});
+$base-background: rgba(128, 128, 128, 1) !default;
+$header-background: $base-background !default;
+$base-border-radius: 0.2rem;
+$base-border-width: 0.1rem;
+$base-padding: 0.5rem;
